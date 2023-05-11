@@ -17,20 +17,20 @@ $reponse_array = json_decode($reponse,true);
 
 $onscreen = '<table class="table" width="100%">
                 <thread>
-                    <th>MESSAGE</th>
-                    <th>STATUS</th>
-                    <th>COMMENT</th>
-                    <th>TAG</th>
-                    <th>SUPPORT</th>
+                    <th>KodeBarang</th>
+                    <th>NamaBarang</th>
+                    <th>GroupBarang</th>
+                    <th>HargaJual</th>
+                    <th>Quantity</th>
                 </thead>
              ';
  foreach ($reponse_array as $resp) {
     $onscreen.='<tr>
-                    <td>'.$resp['message'].'</td>
-                    <td>'.$resp['status'].'</td>
-                    <td>'.$resp['comment'].'</td>
-                    <td>'.$resp['tag'].'</td>
-                    <td>'.$resp['support'].'</td>
+                    <td>'.$resp['KodeBarang'].'</td>
+                    <td>'.$resp['NamaBarang'].'</td>
+                    <td>'.$resp['GroupBarang'].'</td>
+                    <td>'.$resp['HargaJual'].'</td>
+                    <td>'.$resp['Quantity'].'</td>
                   </tr>';  
  }      
  $onscreen.='</table>';
